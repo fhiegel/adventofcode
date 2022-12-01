@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "description": "https://adventofcode.com",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "test"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "keywords": [
     "adventofcode",
     "kata"
   ],
   "author": "fhiegel",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
